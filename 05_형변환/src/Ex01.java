@@ -12,8 +12,10 @@ public class Ex01{
 
         reader.close();
 
-        int bmi = (int)( (double) myWeight / myHeight*myHeight );
+        // int bmi = (int)( (double) myWeight / myHeight*myHeight );
 
-        System.out.printf("BMI : " + bmi);
+        double bmi = myWeight / (myHeight * myHeight);
+
+        System.out.printf("BMI : " + (int)bmi);
     }
 }
