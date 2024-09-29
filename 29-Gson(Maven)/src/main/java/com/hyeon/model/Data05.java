@@ -2,8 +2,13 @@ package com.hyeon.model;
 
 import java.util.List;
 
+// json은 그 자체가 java beans에 대응된다
+// 중괄호 단위로 class를 만든다
 public class Data05 {
+    // rss는 밑의 27라인의 inner class의 객체가 된다 
     private Rss rss;
+    // 생성자는 안 만들어도 된다
+    // 멤버변수, getter, setter
 
     public Rss getRss() {
         return rss;
@@ -18,10 +23,15 @@ public class Data05 {
         return "Data04 [rss=" + rss + "]";
     }
 
+    // inner class
     public class Rss {
+        // json(JavaScript)의 배열은 사이즈 제한X -> 대응되는 것은 Java에서 List !
 
+        // json의 key와 멤벼변수 이름이 같아야 한다
         private List<Item> item;
         
+        // class가 원소인 item 배열 
+        // Item 클래스는  클래스를 담을 수 있는 List
         public List<Item> getItem() {
             return item;
         }
