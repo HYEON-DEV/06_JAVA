@@ -24,11 +24,11 @@ public class App03 {
 
         List<String> items = data.getItem();
         System.out.println(items);
-
+        /* 
         for (int i=0; i<items.size(); i++) {
             System.out.println(items.get(i));
         }
-        
+         */
         for (String item : items) {
             System.out.println(item);
         }

@@ -4,6 +4,7 @@ import java.util.List;
 
 // json은 그 자체가 java beans에 대응된다
 // 중괄호 단위로 class를 만든다
+// json 계층구조는 클래스의 계층구조다
 public class Data05 {
     // rss는 밑의 27라인의 inner class의 객체가 된다 
     private Rss rss;
