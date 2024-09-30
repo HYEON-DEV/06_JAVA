@@ -3,3 +3,4 @@
 bin
 *.md
 App.java
+.gitattributes
