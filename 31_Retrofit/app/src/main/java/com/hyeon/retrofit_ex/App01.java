@@ -33,6 +33,7 @@ public class App01 {
         builder.baseUrl(baseUrl);
 
         // 통신 결과를 Gson 객체를 통해 처리하도록 Gson 연결 => JSON 파싱 자동화
+        //  =>  import retrofit2.converter.gson.GsonConverterFactory;
         builder.addConverterFactory(GsonConverterFactory.create());
 
         // 통신객체 연결
@@ -43,13 +44,16 @@ public class App01 {
 
         // 2) 비즈니스 로직 처리
         // Retrofit 객체를 통해 서비스 객체 생성
+        //  =>  import com.hyeon.service.MySchoolService;
         MySchoolService service = retrofit.create(MySchoolService.class);
 
         // 메서드를 호출해서 call 객체 리턴받는다
         Call<List<Department>> call = service.getDepartments();
 
-        // HTTP 통신으로 JSON 데이터 요청하기
-        call.enqueue( new Callback<List<Department>>() {
+        // HTTP 통신으로 JSON 데이터 요청하기 (ajax 처리)
+        // 익명클래스 방식 사용
+        call.enqueue( new Callback<List<Department>>() {    // 변환하고싶은 객체 정의
+            // =>  import retrofit2.Callback;
 
             @Override
             public void onResponse(Call<List<Department>> call, Response<List<Department>> response) {

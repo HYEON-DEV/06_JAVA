@@ -31,3 +31,8 @@ public interface MySchoolService {
     @GET("/traffic_acc")
     Call<List<Traffic_Acc>> getTraffics();
 }
+
+// Retrofit은 백엔드에서 JSON을 받아오면 전부 Call 이라는 클래스로 받는다
+// model 객체는 단일객체만 담음
+// List 형태의 백엔드를 보관하겠다 => Call <List<Department>>  =>  import retrofit2.Call / import com.hyeon.model.Department;
+// Retrofit 이 제공해주는 annotation @GET  =>  baseUrl + @GET() 겟 안의 단어를 조합해서 주소 만듬
