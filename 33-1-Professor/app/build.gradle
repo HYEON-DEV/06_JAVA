@@ -41,13 +41,14 @@ dependencies {
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
 application {
     // Define the main class for the application.
-    mainClass = 'professor.App'
+    //mainClass = '_crud.App'
+    mainClass = 'com.hyeon.crud_ex.App01'
 }
 
 tasks.named('test') {
