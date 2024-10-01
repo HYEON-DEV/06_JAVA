@@ -13,8 +13,8 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface MySchoolService {
-    @GET("/department")
-    Call<List<Department>> getDepartments();
+    @GET("/department")     //  => import retrofit2.http.GET;
+    Call<List<Department>> getDepartments();    //  => import retrofit2.Call;
 
     @GET("/professor")
     Call<List<Professor>> getProfessors();
