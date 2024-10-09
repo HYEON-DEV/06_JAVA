@@ -57,7 +57,8 @@ public class Ex02_Select {
         try {
             stmt = conn.createStatement();
             rs = stmt.executeQuery(sql);
-
+            //System.out.println(rs);
+             
             while (rs.next()) {
                 int deptno = rs.getInt("deptno");
                 String dname = rs.getString("dname");
@@ -67,7 +68,7 @@ public class Ex02_Select {
                 System.out.println("학과이름 : " + dname);
                 System.out.println("위치 : " + loc);
                 System.out.println();
-            }
+            } 
         } catch (SQLException e) {
             System.out.println("=== Query Error ===");
             e.printStackTrace();
