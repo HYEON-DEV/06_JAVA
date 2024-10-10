@@ -1,0 +1,6 @@
+2024-10-10 18:01:57,833 DEBUG [com.hyeon.student_ex.App01] 입력된 데이터 : 이승현, hyeon, 4, 9703151111111, 1997-03-15, 010-1234-1234, 163, 53, 101, 9903
+2024-10-10 18:01:57,913 DEBUG [org.apache.ibatis.logging.LogFactory] Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2024-10-10 18:01:57,929 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-10 18:01:57,929 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-10 18:01:57,929 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-10 18:01:57,929 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
