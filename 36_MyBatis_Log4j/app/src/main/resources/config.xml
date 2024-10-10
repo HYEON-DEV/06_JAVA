@@ -29,6 +29,6 @@ characterEncoding=UTF8&amp;serverTimezone=UTC" />
     <mappers> 
         <!-- <mapper resource="mappers/DepartmentMapper.xml" /> -->
         <!--<mapper resource="mappers/ProfessorMapper.xml" />-->
-        <mapper resource="mappers/StudentMapper.xml" /> 
+        <mapper resource="mappers/StudentMapper.xml" />
     </mappers>
 </configuration>

@@ -23,7 +23,7 @@
  
     <!-- 데이터 저장을 위한 기능 정의 --> 
     <insert id="insert" 
-            parameterType="com.hyeon.models.Studnet" 
+            parameterType="com.hyeon.models.Student" 
             useGeneratedKeys="true" 
             keyProperty="studno"><!--자동증가 일련번호 컬럼명--> 
         INSERT INTO student (name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno) VALUES (#{name}, #{userid}, #{grade}, #{idnum}, #{birthdate}, #{tel}, #{height}, #{weight}, #{deptno}, #{profno});
