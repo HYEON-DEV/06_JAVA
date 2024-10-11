@@ -7,14 +7,15 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.hyeon.MyBatisConnectionFactory;
+import com.hyeon.exceptions.ServiceNoResultException;
 import com.hyeon.models.Student;
-
-
+import com.hyeon.services.StudentService;
+import com.hyeon.services.impl.StudentServiceImpl;
 
 public class App01 {
     public static void main(String[] args) {
-        
-        Logger logger = LogManager.getLogger(App01.class);
+        //  Log4j 객체 생성        
+        Logger logger = LogManager.getFormatterLogger(App01.class);
 
         Scanner scan = new Scanner(System.in);
         System.out.print("이름 : ");
@@ -48,8 +49,10 @@ public class App01 {
             name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno );
         logger.debug(inputData);
 
+        // 데이터베이스 접속
         SqlSession sqlSession = MyBatisConnectionFactory.getSqlSession();
-      
+
+        // 저장될 데이터를 담고 있는 Beans 객체 생성
         Student student = new Student();
         student.setName(name);
         student.setUserid(userid);
@@ -62,18 +65,32 @@ public class App01 {
         student.setDeptno(deptno);
         student.setProfno(profno);
 
-        int result = 0;
+        //  비즈니스 로직을 위한 Service 객체 생성
+        StudentService studentService = new StudentServiceImpl(sqlSession);
+        Student result = null;
 
         try {
-            sqlSession.insert("StudentMapper.insert", student);
-            result = student.getStudno();
-        } catch (Exception e) {
+            result = studentService.addItem(student);
+        } catch (ServiceNoResultException e) {
+            sqlSession.rollback();
+            logger.error("[ 저장된 결과가 없습니다 ]");
             logger.error(e.getMessage());
+        } catch (Exception e) {
+            sqlSession.rollback();
+            logger.error("[ SQL문 처리 실패. Mapper를 확인하세요 ]");
+            logger.error(e.getMessage());
+        } finally {
+            sqlSession.commit();
         }
 
-        logger.info(result + "번 데이터 저장");
-        
-        sqlSession.commit();
+        if (result != null) {
+            logger.debug("===========================================");
+            logger.debug(result.toString());
+            logger.debug("===========================================");
+        } else {
+            logger.error("저장된 데이터가 없습니다");
+        }
+
         sqlSession.close();
     }
 }
