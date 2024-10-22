@@ -27,8 +27,8 @@ characterEncoding=UTF8&amp;serverTimezone=UTC" />
  
     <!-- 실행할 SQL문을 정의한 Mapper XML의 경로를 지정한다. --> 
     <mappers> 
-        <!-- <mapper resource="mappers/DepartmentMapper.xml" /> -->
-        <!--<mapper resource="mappers/ProfessorMapper.xml" />-->
+        <mapper resource="mappers/DepartmentMapper.xml" />
+        <mapper resource="mappers/ProfessorMapper.xml" />
         <mapper resource="mappers/StudentMapper.xml" />
     </mappers>
 </configuration>

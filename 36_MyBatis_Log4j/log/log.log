@@ -1,206 +1,26 @@
-2024-10-10 20:12:25,593 DEBUG [org.apache.ibatis.logging.LogFactory] Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
-2024-10-10 20:12:25,628 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
-2024-10-10 20:12:25,629 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
-2024-10-10 20:12:25,630 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
-2024-10-10 20:12:25,631 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
-2024-10-10 20:12:25,805 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Opening JDBC Connection
-2024-10-10 20:12:26,978 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] Created connection 1521568953.
-2024-10-10 20:12:26,980 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ab14cb9]
-2024-10-10 20:12:26,994 DEBUG [StudentMapper.selectList] ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student;
-2024-10-10 20:12:27,150 DEBUG [StudentMapper.selectList] ==> Parameters: 
-2024-10-10 20:12:27,273 DEBUG [StudentMapper.selectList] <==      Total: 16
-2024-10-10 20:12:27,282 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10101
-2024-10-10 20:12:27,285 DEBUG [com.hyeon.student_ex.App05] 이름 : 전인하
-2024-10-10 20:12:27,290 DEBUG [com.hyeon.student_ex.App05] 아이디 : jun123
-2024-10-10 20:12:27,294 DEBUG [com.hyeon.student_ex.App05] 학년 : 4
-2024-10-10 20:12:27,299 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 7907021369824
-2024-10-10 20:12:27,302 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1979-07-02 00:00:00
-2024-10-10 20:12:27,303 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 051)781-2158
-2024-10-10 20:12:27,310 DEBUG [com.hyeon.student_ex.App05] 키 : 176
-2024-10-10 20:12:27,311 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 72
-2024-10-10 20:12:27,312 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 101
-2024-10-10 20:12:27,314 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9903
-
-2024-10-10 20:12:27,316 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10102
-2024-10-10 20:12:27,319 DEBUG [com.hyeon.student_ex.App05] 이름 : 박미경
-2024-10-10 20:12:27,320 DEBUG [com.hyeon.student_ex.App05] 아이디 : ansel414
-2024-10-10 20:12:27,328 DEBUG [com.hyeon.student_ex.App05] 학년 : 1
-2024-10-10 20:12:27,331 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8405162123648
-2024-10-10 20:12:27,334 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1984-05-16 00:00:00
-2024-10-10 20:12:27,364 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 055)261-8947
-2024-10-10 20:12:27,368 DEBUG [com.hyeon.student_ex.App05] 키 : 168
-2024-10-10 20:12:27,370 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 52
-2024-10-10 20:12:27,374 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 101
-2024-10-10 20:12:27,376 DEBUG [com.hyeon.student_ex.App05] 교수번호 : null
-
-2024-10-10 20:12:27,378 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10103
-2024-10-10 20:12:27,380 DEBUG [com.hyeon.student_ex.App05] 이름 : 김영균
-2024-10-10 20:12:27,381 DEBUG [com.hyeon.student_ex.App05] 아이디 : mandu
-2024-10-10 20:12:27,384 DEBUG [com.hyeon.student_ex.App05] 학년 : 3
-2024-10-10 20:12:27,384 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8103211063421
-2024-10-10 20:12:27,385 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1981-03-21 00:00:00
-2024-10-10 20:12:27,387 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 051)824-9637
-2024-10-10 20:12:27,391 DEBUG [com.hyeon.student_ex.App05] 키 : 170
-2024-10-10 20:12:27,392 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 88
-2024-10-10 20:12:27,394 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 101
-2024-10-10 20:12:27,395 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9906
-
-2024-10-10 20:12:27,397 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10104
-2024-10-10 20:12:27,401 DEBUG [com.hyeon.student_ex.App05] 이름 : 지은경
-2024-10-10 20:12:27,402 DEBUG [com.hyeon.student_ex.App05] 아이디 : gomo00
-2024-10-10 20:12:27,403 DEBUG [com.hyeon.student_ex.App05] 학년 : 2
-2024-10-10 20:12:27,404 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8004122298371
-2024-10-10 20:12:27,412 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1980-04-12 00:00:00
-2024-10-10 20:12:27,413 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 055)418-9627
-2024-10-10 20:12:27,414 DEBUG [com.hyeon.student_ex.App05] 키 : 161
-2024-10-10 20:12:27,417 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 42
-2024-10-10 20:12:27,418 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 101
-2024-10-10 20:12:27,419 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9907
-
-2024-10-10 20:12:27,425 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10105
-2024-10-10 20:12:27,430 DEBUG [com.hyeon.student_ex.App05] 이름 : 임유진
-2024-10-10 20:12:27,434 DEBUG [com.hyeon.student_ex.App05] 아이디 : youjin12
-2024-10-10 20:12:27,442 DEBUG [com.hyeon.student_ex.App05] 학년 : 2
-2024-10-10 20:12:27,446 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8301212196482
-2024-10-10 20:12:27,448 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1983-01-21 00:00:00
-2024-10-10 20:12:27,457 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 02)312-9838
-2024-10-10 20:12:27,463 DEBUG [com.hyeon.student_ex.App05] 키 : 171
-2024-10-10 20:12:27,467 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 54
-2024-10-10 20:12:27,469 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 101
-2024-10-10 20:12:27,471 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9907
-
-2024-10-10 20:12:27,473 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10106
-2024-10-10 20:12:27,480 DEBUG [com.hyeon.student_ex.App05] 이름 : 서재진
-2024-10-10 20:12:27,482 DEBUG [com.hyeon.student_ex.App05] 아이디 : seolly
-2024-10-10 20:12:27,484 DEBUG [com.hyeon.student_ex.App05] 학년 : 1
-2024-10-10 20:12:27,487 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8511291186273
-2024-10-10 20:12:27,490 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1985-11-29 00:00:00
-2024-10-10 20:12:27,492 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 051)239-4861
-2024-10-10 20:12:27,499 DEBUG [com.hyeon.student_ex.App05] 키 : 186
-2024-10-10 20:12:27,502 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 72
-2024-10-10 20:12:27,503 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 101
-2024-10-10 20:12:27,510 DEBUG [com.hyeon.student_ex.App05] 교수번호 : null
-
-2024-10-10 20:12:27,512 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10107
-2024-10-10 20:12:27,515 DEBUG [com.hyeon.student_ex.App05] 이름 : 이광훈
-2024-10-10 20:12:27,516 DEBUG [com.hyeon.student_ex.App05] 아이디 : huriky
-2024-10-10 20:12:27,517 DEBUG [com.hyeon.student_ex.App05] 학년 : 4
-2024-10-10 20:12:27,519 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8109131276431
-2024-10-10 20:12:27,520 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1981-09-13 00:00:00
-2024-10-10 20:12:27,527 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 055)736-4981
-2024-10-10 20:12:27,528 DEBUG [com.hyeon.student_ex.App05] 키 : 175
-2024-10-10 20:12:27,531 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 92
-2024-10-10 20:12:27,534 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 101
-2024-10-10 20:12:27,535 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9903
-
-2024-10-10 20:12:27,537 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10108
-2024-10-10 20:12:27,546 DEBUG [com.hyeon.student_ex.App05] 이름 : 류민정
-2024-10-10 20:12:27,548 DEBUG [com.hyeon.student_ex.App05] 아이디 : cleansky
-2024-10-10 20:12:27,548 DEBUG [com.hyeon.student_ex.App05] 학년 : 2
-2024-10-10 20:12:27,552 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8108192157498
-2024-10-10 20:12:27,553 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1981-08-19 00:00:00
-2024-10-10 20:12:27,558 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 055)248-3679
-2024-10-10 20:12:27,561 DEBUG [com.hyeon.student_ex.App05] 키 : 162
-2024-10-10 20:12:27,563 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 72
-2024-10-10 20:12:27,565 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 101
-2024-10-10 20:12:27,566 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9907
-
-2024-10-10 20:12:27,567 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10201
-2024-10-10 20:12:27,568 DEBUG [com.hyeon.student_ex.App05] 이름 : 김진영
-2024-10-10 20:12:27,569 DEBUG [com.hyeon.student_ex.App05] 아이디 : simply
-2024-10-10 20:12:27,577 DEBUG [com.hyeon.student_ex.App05] 학년 : 2
-2024-10-10 20:12:27,578 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8206062186327
-2024-10-10 20:12:27,579 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1982-06-06 00:00:00
-2024-10-10 20:12:27,580 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 055)419-6328
-2024-10-10 20:12:27,582 DEBUG [com.hyeon.student_ex.App05] 키 : 164
-2024-10-10 20:12:27,583 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 48
-2024-10-10 20:12:27,586 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 102
-2024-10-10 20:12:27,587 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9905
-
-2024-10-10 20:12:27,594 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10202
-2024-10-10 20:12:27,595 DEBUG [com.hyeon.student_ex.App05] 이름 : 오유석
-2024-10-10 20:12:27,597 DEBUG [com.hyeon.student_ex.App05] 아이디 : yousuk
-2024-10-10 20:12:27,598 DEBUG [com.hyeon.student_ex.App05] 학년 : 4
-2024-10-10 20:12:27,600 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 7709121128379
-2024-10-10 20:12:27,602 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1977-09-12 00:00:00
-2024-10-10 20:12:27,603 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 051)724-9618
-2024-10-10 20:12:27,605 DEBUG [com.hyeon.student_ex.App05] 키 : 177
-2024-10-10 20:12:27,609 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 92
-2024-10-10 20:12:27,611 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 102
-2024-10-10 20:12:27,613 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9905
-
-2024-10-10 20:12:27,615 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10203
-2024-10-10 20:12:27,617 DEBUG [com.hyeon.student_ex.App05] 이름 : 하나리
-2024-10-10 20:12:27,619 DEBUG [com.hyeon.student_ex.App05] 아이디 : hanal
-2024-10-10 20:12:27,622 DEBUG [com.hyeon.student_ex.App05] 학년 : 1
-2024-10-10 20:12:27,628 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8501092378641
-2024-10-10 20:12:27,630 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1985-01-09 00:00:00
-2024-10-10 20:12:27,633 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 055)296-3784
-2024-10-10 20:12:27,634 DEBUG [com.hyeon.student_ex.App05] 키 : 160
-2024-10-10 20:12:27,637 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 68
-2024-10-10 20:12:27,640 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 102
-2024-10-10 20:12:27,644 DEBUG [com.hyeon.student_ex.App05] 교수번호 : null
-
-2024-10-10 20:12:27,646 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 10204
-2024-10-10 20:12:27,647 DEBUG [com.hyeon.student_ex.App05] 이름 : 윤진욱
-2024-10-10 20:12:27,648 DEBUG [com.hyeon.student_ex.App05] 아이디 : samba7
-2024-10-10 20:12:27,651 DEBUG [com.hyeon.student_ex.App05] 학년 : 3
-2024-10-10 20:12:27,652 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 7904021358671
-2024-10-10 20:12:27,653 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1979-04-02 00:00:00
-2024-10-10 20:12:27,660 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 053)487-2698
-2024-10-10 20:12:27,663 DEBUG [com.hyeon.student_ex.App05] 키 : 171
-2024-10-10 20:12:27,665 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 70
-2024-10-10 20:12:27,668 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 102
-2024-10-10 20:12:27,669 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9905
-
-2024-10-10 20:12:27,675 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 20101
-2024-10-10 20:12:27,677 DEBUG [com.hyeon.student_ex.App05] 이름 : 이동훈
-2024-10-10 20:12:27,680 DEBUG [com.hyeon.student_ex.App05] 아이디 : dals
-2024-10-10 20:12:27,681 DEBUG [com.hyeon.student_ex.App05] 학년 : 1
-2024-10-10 20:12:27,683 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8312101128467
-2024-10-10 20:12:27,684 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1983-12-10 00:00:00
-2024-10-10 20:12:27,685 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 055)426-1752
-2024-10-10 20:12:27,687 DEBUG [com.hyeon.student_ex.App05] 키 : 172
-2024-10-10 20:12:27,693 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 64
-2024-10-10 20:12:27,698 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 201
-2024-10-10 20:12:27,699 DEBUG [com.hyeon.student_ex.App05] 교수번호 : null
-
-2024-10-10 20:12:27,701 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 20102
-2024-10-10 20:12:27,702 DEBUG [com.hyeon.student_ex.App05] 이름 : 박동진
-2024-10-10 20:12:27,703 DEBUG [com.hyeon.student_ex.App05] 아이디 : ping2
-2024-10-10 20:12:27,704 DEBUG [com.hyeon.student_ex.App05] 학년 : 1
-2024-10-10 20:12:27,710 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8511241639826
-2024-10-10 20:12:27,712 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1985-11-24 00:00:00
-2024-10-10 20:12:27,713 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 051)742-6384
-2024-10-10 20:12:27,715 DEBUG [com.hyeon.student_ex.App05] 키 : 182
-2024-10-10 20:12:27,716 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 70
-2024-10-10 20:12:27,717 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 201
-2024-10-10 20:12:27,718 DEBUG [com.hyeon.student_ex.App05] 교수번호 : null
-
-2024-10-10 20:12:27,720 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 20103
-2024-10-10 20:12:27,721 DEBUG [com.hyeon.student_ex.App05] 이름 : 김진경
-2024-10-10 20:12:27,726 DEBUG [com.hyeon.student_ex.App05] 아이디 : lovely
-2024-10-10 20:12:27,728 DEBUG [com.hyeon.student_ex.App05] 학년 : 2
-2024-10-10 20:12:27,729 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 8302282169387
-2024-10-10 20:12:27,731 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 1983-02-28 00:00:00
-2024-10-10 20:12:27,734 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 052)175-3941
-2024-10-10 20:12:27,735 DEBUG [com.hyeon.student_ex.App05] 키 : 166
-2024-10-10 20:12:27,736 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 51
-2024-10-10 20:12:27,737 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 201
-2024-10-10 20:12:27,738 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9902
-
-2024-10-10 20:12:27,744 DEBUG [com.hyeon.student_ex.App05] 학생번호 : 20104
-2024-10-10 20:12:27,745 DEBUG [com.hyeon.student_ex.App05] 이름 : 박명훈
-2024-10-10 20:12:27,748 DEBUG [com.hyeon.student_ex.App05] 아이디 : hoon12
-2024-10-10 20:12:27,749 DEBUG [com.hyeon.student_ex.App05] 학년 : 3
-2024-10-10 20:12:27,751 DEBUG [com.hyeon.student_ex.App05] 주민번호 : 0003012222222
-2024-10-10 20:12:27,752 DEBUG [com.hyeon.student_ex.App05] 생년월일 : 2000-03-01 00:00:00
-2024-10-10 20:12:27,753 DEBUG [com.hyeon.student_ex.App05] 전화번호 : 010-3333-3333
-2024-10-10 20:12:27,761 DEBUG [com.hyeon.student_ex.App05] 키 : 191
-2024-10-10 20:12:27,764 DEBUG [com.hyeon.student_ex.App05] 몸무게 : 90
-2024-10-10 20:12:27,764 DEBUG [com.hyeon.student_ex.App05] 학과번호 : 102
-2024-10-10 20:12:27,766 DEBUG [com.hyeon.student_ex.App05] 교수번호 : 9906
-
-2024-10-10 20:12:27,769 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ab14cb9]
-2024-10-10 20:12:27,777 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ab14cb9]
-2024-10-10 20:12:27,779 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] Returned connection 1521568953 to pool.
+2024-10-22 21:21:21,787 DEBUG [org.apache.ibatis.logging.LogFactory] Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2024-10-22 21:21:21,798 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-22 21:21:21,799 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-22 21:21:21,799 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-22 21:21:21,799 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] PooledDataSource forcefully closed/removed all connections.
+2024-10-22 21:21:21,891 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Opening JDBC Connection
+2024-10-22 21:21:22,184 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] Created connection 61137731.
+2024-10-22 21:21:22,185 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3a4e343]
+2024-10-22 21:21:22,187 DEBUG [DepartmentMapper.selectList] ==>  Preparing: SELECT deptno, dname, loc FROM department;
+2024-10-22 21:21:22,209 DEBUG [DepartmentMapper.selectList] ==> Parameters: 
+2024-10-22 21:21:22,231 DEBUG [DepartmentMapper.selectList] <==      Total: 4
+2024-10-22 21:21:22,234 DEBUG [com.hyeon.mybatis_ex.App05] 학과번호 : 101
+2024-10-22 21:21:22,235 DEBUG [com.hyeon.mybatis_ex.App05] 학과명 : 컴퓨터공학과
+2024-10-22 21:21:22,235 DEBUG [com.hyeon.mybatis_ex.App05] 위치 : 1호관
+2024-10-22 21:21:22,235 DEBUG [com.hyeon.mybatis_ex.App05] 학과번호 : 102
+2024-10-22 21:21:22,236 DEBUG [com.hyeon.mybatis_ex.App05] 학과명 : 멀티미디어학과
+2024-10-22 21:21:22,236 DEBUG [com.hyeon.mybatis_ex.App05] 위치 : 2호관
+2024-10-22 21:21:22,236 DEBUG [com.hyeon.mybatis_ex.App05] 학과번호 : 201
+2024-10-22 21:21:22,236 DEBUG [com.hyeon.mybatis_ex.App05] 학과명 : 전자공학과
+2024-10-22 21:21:22,237 DEBUG [com.hyeon.mybatis_ex.App05] 위치 : 3호관
+2024-10-22 21:21:22,237 DEBUG [com.hyeon.mybatis_ex.App05] 학과번호 : 202
+2024-10-22 21:21:22,237 DEBUG [com.hyeon.mybatis_ex.App05] 학과명 : 기계공학과
+2024-10-22 21:21:22,237 DEBUG [com.hyeon.mybatis_ex.App05] 위치 : 4호관
+2024-10-22 21:21:22,237 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3a4e343]
+2024-10-22 21:21:22,238 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3a4e343]
+2024-10-22 21:21:22,239 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] Returned connection 61137731 to pool.
